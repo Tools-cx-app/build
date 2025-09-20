@@ -55,6 +55,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          sudo apt update -y
           sudo apt install ninja-build binfmt-support qemu-user-static
 
       - name: Build dependencies
